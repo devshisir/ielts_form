@@ -8,12 +8,14 @@ $(document).ready(function() {
         $('.progress2').addClass('active');
         $('#formPageFormItem1').addClass('hide');
         $('#formPageFormItem2').addClass('showItem2');
+        $('#email').focus();
     })
     // email next btn
     $('#EmailNext').on('click',function(){
         $('.progress3').addClass('active');
         $('#formPageFormItem2').removeClass('showItem2');
         $('#formPageFormItem3').addClass('showItem3');
+        $('#phone').focus();
     });
 
     // mobile input
