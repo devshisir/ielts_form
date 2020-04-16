@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+   <meta charset="utf-8">
+   <title>IELTS Landing Form || 2020</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="apple-touch-icon" href="asset/img/favicon.png">
+   <link rel="icon" href="asset/img/favicon.png">
+   <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+   <link rel="stylesheet" href="asset/css/fontawsome.css">
+   <link rel="stylesheet" href="asset/css/nice-select.css">
+   <link rel="stylesheet" href="asset/css/intlTelInput.css">
+   <link rel="stylesheet" href="asset/css/style.css">
+   <link rel="stylesheet" href="asset/css/custom.css">
+   <link rel="stylesheet" href="asset/css/responsive.css">
+   <!-- this is for mordanizar js link -->
+   <script src="asset/js/vendor/modernizr-3.6.0.min.js"></script>
+</head>
+
+<body>
+   <!-- form page header -->
+   <header id="formPageHeader">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="logo">
+                  <a href="index.html">
+                     <img class="img-fluid" src="asset/img/logo-2.png" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- form page header -->
+   <!-- form info top -->
+   <section id="formInfoTop">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="formInfoTopContent">
+                  <p>Answer the following questions  to schedule a Free Trial Class</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="formProgress">
+         <ul>
+            <li class="progress1 active"></li>
+            <li class="progress2"></li>
+            <li class="progress3"></li>
+            <li class="progress4"></li>
+         </ul>
+      </div>
+   </section>
+   <!-- form info top -->
+   <!-- form area main -->
+   <section id="formPageForm">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="formPageFormContent">
+                  <form>
+                     <div class="formPageFormItem" id="formPageFormItem1">
+                        <p class="questionNumber">Q 1 of 4</p>
+                        <h3 class="Question">What is your name?</h3>
+                        <input oninput="checkName();" type="text" placeholder="Type your answer here..." name="name" id="name">
+                        <button type="button" id="nameNext">Next <span><i class="fal fa-angle-right"></i></span></button>
+                     </div>
+                     <div class="formPageFormItem" id="formPageFormItem2">
+                        <p class="questionNumber">Q 2 of 4</p>
+                        <h3 class="Question">What is your email ID?</h3>
+                        <h6 class="labelEmail">We will send amazing videos here.</h6>
+                        <input oninput="checkEmail();" type="email" placeholder="example@email.com" name="email" id="email">
+                        <p id="EmailError"></p>
+                        <h4 id="resut"></h4>
+                        <button type="button" id="EmailNext">Next <span><i class="fal fa-angle-right"></i></span></button>
+                     </div>
+                     <div class="formPageFormItem" id="formPageFormItem3">
+                        <p class="questionNumber">Q 3 of 4</p>
+                        <h3 class="Question">What is your mobile number?</h3>
+                        <h6 class="labelEmail">We will coordinate with you on this no.</h6>
+                        <input oninput="phoneCheck()" id="phone" name="phone" type="tel" placeholder="Type your 10 digit mobile no.">
+                        <p id="phoneError"></p>
+                        <h4 id="resut"></h4>
+                        <button type="button" id="PhoneNext">Next <span><i class="fal fa-angle-right"></i></span></button>
+                     </div>
+                     <div class="formPageFormItem" id="formPageFormItem4">
+                        <p class="questionNumber">Q 4 of 4</p>
+                        <h3 class="Question">What do you do?</h3>
+                        <div class="formRadio">
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                              <label class="form-check-label" for="gridRadios1">
+                                 Working Professional
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option1">
+                              <label class="form-check-label" for="gridRadios2">
+                                 Homemaker
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option1">
+                              <label class="form-check-label" for="gridRadios3">
+                                 Student
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option1">
+                              <label class="form-check-label" for="gridRadios4">
+                                 Student
+                              </label>
+                            </div>
+                        </div>
+                        
+                        <a href="otp_page.html" id="SubmitButton">SUBMIT</a>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- form area main -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   <!-- all javascript load here -->
+   <script src="asset/js/vendor/jquery-3.3.1.min.js"></script>
+   <script src="asset/js/bootstrap.bundle.min.js"></script>
+   <script src="asset/js/jquery.nice-select.min.js"></script>
+   <script src="asset/js/intlTelInput.js"></script>
+   <script src="asset/js/custom.js"></script>
+   <script src="asset/js/stepForm.js"></script>
+   <script>
+      var input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+         placeholderNumberType:"MOBILE",
+         formatOnDisplay:true,
+         autoHideDialCode:true,
+         autoPlaceholder:"polite",
+         separateDialCode:true,
+        utilsScript: "asset/js/utils.js",
+      });
+    </script>
+</body>
+</html>

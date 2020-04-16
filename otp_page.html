@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+   <meta charset="utf-8">
+   <title>IELTS Landing Form || 2020</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="apple-touch-icon" href="asset/img/favicon.png">
+   <link rel="icon" href="asset/img/favicon.png">
+   <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+   <link rel="stylesheet" href="asset/css/fontawsome.css">
+   <link rel="stylesheet" href="asset/css/nice-select.css">
+   <link rel="stylesheet" href="asset/css/intlTelInput.css">
+   <link rel="stylesheet" href="asset/css/style.css">
+   <link rel="stylesheet" href="asset/css/custom.css">
+   <link rel="stylesheet" href="asset/css/responsive.css">
+   <!-- this is for mordanizar js link -->
+   <script src="asset/js/vendor/modernizr-3.6.0.min.js"></script>
+</head>
+
+<body>
+   <!-- form page header -->
+   <header id="formPageHeader">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="logo">
+                  <a href="index.html">
+                     <img class="img-fluid" src="asset/img/logo-2.png" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- form page header -->
+   <!-- form info top -->
+   <section id="formInfoTop">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="formInfoTopContent">
+                  <p>A 4-digit OTP has been sent to verify <br> your mobile number</p>
+                  <h4>+91 9876543210 <a id="PhoneEdit" href="#"><img src="asset/img/icons/edit.png" alt=""></a></h4>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- form info top -->
+   <!-- start otp main form -->
+   <section id="optMainarea">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="optMainareaContent">
+                  <div data-pin></div>
+                  <div class="verifyBtn">
+                     <a href="thanks_page.html">VERIFY</a>
+                  </div>
+                  <div class="resentOtp">
+                     <a href="#">Resend OTP</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end otp main form -->
+   <!-- phone number edit popup -->
+   <section id="phoneEditPopup">
+      <div class="phoneEditPopupContent">
+         <span id="phoneEditClose"><i class="fal fa-times"></i></span>
+         <p>Edit Mobile Number</p>
+         <input id="phoneEdit" name="phone" type="tel" value="98765 43210">
+      </div>
+   </section>
+   <!-- phone number edit popup -->
+   <!-- all javascript load here -->
+   <script src="asset/js/vendor/jquery-3.3.1.min.js"></script>
+   <script src="asset/js/bootstrap.bundle.min.js"></script>
+   <script src="asset/js/jquery.nice-select.min.js"></script>
+   <script src="asset/js/intlTelInput.js"></script>
+   <script src="asset/js/jquery.pin.min.js"></script>
+   <script src="asset/js/custom.js"></script>
+   <script>
+   $('[data-pin]').pin({
+      allowSequential: true,
+      allowRepeat: true,
+      count: 4
+   });
+      var input = document.querySelector("#phoneEdit");
+      window.intlTelInput(input, {
+         placeholderNumberType:"MOBILE",
+         formatOnDisplay:true,
+         autoHideDialCode:true,
+         autoPlaceholder:"polite",
+         separateDialCode:true,
+        utilsScript: "asset/js/utils.js",
+      });
+      $('.iti__selected-dial-code').html('+91');
+    </script>
+</body>
+</html>
