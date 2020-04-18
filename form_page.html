@@ -153,6 +153,17 @@
    <script src="asset/js/custom.js"></script>
    <script src="asset/js/stepForm.js"></script>
    <script>
+      $(document).ready(function() {
+         $('#name').focus();
+         $('#name').select();
+         $('#name').focus();
+         // $('#name').prompt();
+      });
+      jQuery(document).bind('pageshow', function()
+      {
+         jQuery($('#name')).focus();
+         jQuery($('#name')).prompt();
+      });
       var input = document.querySelector("#phone");
       window.intlTelInput(input, {
          placeholderNumberType:"MOBILE",
@@ -161,6 +172,10 @@
          autoPlaceholder:"polite",
          separateDialCode:true,
         utilsScript: "asset/js/utils.js",
+      });
+      $(document).live('click', function() {
+         // $("#input-element-id").focus();
+        
       });
     </script>
 </body>

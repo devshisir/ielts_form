@@ -1,169 +1,136 @@
 /* XL (laptop) Device :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
-    #header_top .header_right {
-        left: 100px;
+    #headerTop {
+        padding: 15px 0px;
+    }
+    #mobileBanar .mobileBanarContent h3 {
+        font-size: 54px;
+    }
+    #mobileBanar .mobileBanarContent h4 {
+        font-size: 54px;
+    }
+    #mobileBanar .mobileBanarContent h2 {
+        font-size: 54px;
+    }
+    .bgLayer > img{
+        display: none;
+    }
+    #homeFreeTril{
+        padding: 200px 0px;
+        background-image: url(../img/img/trailbg.png);
+        background-repeat: repeat;
+    }
+    #homeFreeTril .homeFreeTrilContent {
+        margin-top: 0px;
+    }
+    #homeFreeTril .homeFreeTrilContent .bgLayer .homeFreeTrilContentMain {
+        padding: 30px 0px;
+    }
+    #homeFreeTril .homeFreeTrilContent .bgLayer .homeFreeTrilContentMain h3 {
+        width: 65%;
+        margin: 0 auto;
+    }
+    #footer {
+        padding-bottom: 100px;
+        padding-top: 32px;
+    }
+    #footer .footerContent p {
+        font-size: 12px;
     }
 }
 
 /* LG Device :992px. */
 @media (min-width: 992px) and (max-width: 1199px) {
-    #header_top .header_right {
-        left: 70px;
-    }
-    #header_top {
-        overflow-x: hidden;
-    }
-    body{
-        overflow-x: hidden !important;
-    }
+    
 }
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-    #header_top .header_right {
-        position: relative;
-        left: 0px;
-        cursor: pointer;
+    #headerTop {
+        padding: 15px 0px;
     }
-    #header_top .header_left_text h2 {
-        font-size: 19px;
-        left: 0px;
+    #mobileBanar .mobileBanarContent h3 {
+        font-size: 54px;
     }
-    #header_top .header_right {
-        left: 129px;
+    #mobileBanar .mobileBanarContent h4 {
+        font-size: 54px;
     }
-    #header_top {
-        overflow-x: hidden;
+    #mobileBanar .mobileBanarContent h2 {
+        font-size: 54px;
     }
-    #class_main .class_main_item .class_main_item_right h5 {
-        font-size: 13px;
+    .bgLayer > img{
+        display: none;
     }
-    #class_main .class_main_item .class_main_item_right h4 {
-        font-size: 13px;
+    #homeFreeTril{
+        padding: 200px 0px;
+        background-image: url(../img/img/trailbg.png);
+        background-repeat: repeat;
     }
-    #class_main .class_main_item .class_main_item_left h4 {
+    #homeFreeTril .homeFreeTrilContent {
+        margin-top: 0px;
+    }
+    #homeFreeTril .homeFreeTrilContent .bgLayer .homeFreeTrilContentMain {
+        padding: 30px 0px;
+    }
+    #homeFreeTril .homeFreeTrilContent .bgLayer .homeFreeTrilContentMain h3 {
+        width: 65%;
+        margin: 0 auto;
+    }
+    #footer {
+        padding-bottom: 100px;
+        padding-top: 32px;
+    }
+    #footer .footerContent p {
         font-size: 12px;
-    }
-    #class_main .class_main_item .class_main_item_right_2 ul li .link_share {
-        margin-left: 7px;
-        padding: 11px 36px;
-        font-size: 11px;
-    }
-    #class_main .class_main_item .class_main_item_right_2 ul li a {
-        font-size: 13px;
-    }
-    #class_main .class_main_item .class_main_item_right_3 ul li a {
-        width: 180px;
-        padding: 11px 0px;
-        font-size: 12px;
-        margin-right: 9px;
     }
 }
 /* Extra small Device. */
 @media (max-width: 575px) {
-    #header_top .header_right {
-        left: 0px;
+    #footer {
+        padding-bottom: 80px;
+        padding-top: 32px;
     }
-    .header_left_text{
-        display: none;
-    }
-    #header_top .header_right .user_image img {
-        height: 100%;
-        width: 100%;
-        position: relative;
-        left: 43px;
-    }
-    #header_top .header_right .user_info h5 {
-       font-size: 16px;
-    } 
-    #header_top .header_right .user_info p {
-        font-size: 8px;
-    }
-    .sidebar_togle{
-        text-align: center;
-    }
-    .user_info {
-        position: relative;
-        left: 25px;
-    }
-    #class_main .class_main_item .class_main_item_left h4 {
-        margin-bottom: 10px;
-    }
-    #class_main .class_main_item .class_main_item_right h5 {
-        font-size: 12px;
-        line-height: 20px;
-    }
-    #class_main .class_main_item .class_main_item_right h4 {
-        font-size: 12px;
-        line-height: 20px;
-    }
-    #class_main .class_main_item .class_main_item_right_2 ul li .link_share {
-        margin-top: 17px;
-        margin-left: 0px;
-        margin: 0 auto;
-        display: table;
-        margin-top: 10px;
-    }
-    #class_main .class_main_item .class_main_item_right_3 ul li a {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    #share_link_popup .share_link_popup_container {
-        width: 90%;
-        padding: 34px 40px;
-    }
-    #course_link_popup .course_link_popup_container{
-        width: 90%;
-        padding: 34px 40px;
-    }
-    #share_link_popup .share_link_popup_container p {
-        font-size: 13px;
-    }
-    #share_link_popup .share_link_popup_container a {
-        margin-top: 16px;
+    #footer .footerContent p {
+        font-size: 10px;
     }
 }
 /*-- Phone Landscape --*/
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    #header_top .header_right {
-        left: 0px;
+    #headerTop {
+        padding: 15px 0px;
     }
-    #header_top .header_left_text h2 {
-        font-size: 17px;
-        left: 0px;
-        position: relative;
-        top: 2px;
+    #mobileBanar .mobileBanarContent h3 {
+        font-size: 54px;
     }
-    #header_top .header_right .user_image img {
-        height: 100%;
-        width: 100%;
+    #mobileBanar .mobileBanarContent h4 {
+        font-size: 54px;
     }
-    #class_main .class_main_item .class_main_item_left h4 {
-        margin-bottom: 13px;
+    #mobileBanar .mobileBanarContent h2 {
+        font-size: 54px;
     }
-    #class_main .class_main_item .class_main_item_right h5 {
-        font-size: 13px;
+    .bgLayer > img{
+        display: none;
     }
-    #class_main .class_main_item .class_main_item_right h4 {
-        font-size: 13px;
+    #homeFreeTril{
+        padding: 200px 0px;
+        background-image: url(../img/img/trailbg.png);
+        background-repeat: repeat;
     }
-    #class_main .class_main_item .class_main_item_right_3 ul li a {
-        width: 184px;
-        padding: 13px 0px;
-        margin-right: 19px;
+    #homeFreeTril .homeFreeTrilContent {
+        margin-top: 0px;
     }
-    #share_link_popup .share_link_popup_container {
-        width: 90%;
-        padding: 34px 40px;
+    #homeFreeTril .homeFreeTrilContent .bgLayer .homeFreeTrilContentMain {
+        padding: 30px 0px;
     }
-    #course_link_popup .course_link_popup_container{
-        width: 90%;
-        padding: 34px 40px;
+    #homeFreeTril .homeFreeTrilContent .bgLayer .homeFreeTrilContentMain h3 {
+        width: 65%;
+        margin: 0 auto;
     }
-    #share_link_popup .share_link_popup_container p {
-        font-size: 13px;
+    #footer {
+        padding-bottom: 100px;
+        padding-top: 32px;
     }
-    #share_link_popup .share_link_popup_container a {
-        margin-top: 16px;
+    #footer .footerContent p {
+        font-size: 12px;
     }
 }
 @media (max-width: 767px) {

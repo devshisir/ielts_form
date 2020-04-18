@@ -2,7 +2,11 @@ $(document).ready(function() {
     var ielts = $(window);
     var page = $('html, body');
     $('select').niceSelect();
-    $('#name').focus();
+    // $('#FreeTrailBtn').on('click',function(){
+    //     // ;
+    //     console.log('click');
+    // })
+    
     // name next btn
     $('#nameNext').on('click',function(){
         $('.progress2').addClass('active');
