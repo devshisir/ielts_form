@@ -41,7 +41,25 @@
 
 /* LG Device :992px. */
 @media (min-width: 992px) and (max-width: 1199px) {
-    
+    #homeFreeTril{
+        padding: 100px 0px;
+        background-image: url(../img/img/trailbg.png);
+        background-repeat: repeat;
+    }
+    #homeFreeTril .homeFreeTrilContent {
+        margin-top: 0px;
+    }
+    #homeFreeTril .homeFreeTrilContent .bgLayer .homeFreeTrilContentMain {
+        padding: 30px 0px;
+    }
+    #homeFreeTril .homeFreeTrilContent .bgLayer .homeFreeTrilContentMain h3 {
+        width: 65%;
+        margin: 0 auto;
+        font-size: 23px;
+    }
+    #homeFreeTril .homeFreeTrilContent .bgLayer .homeFreeTrilContentMain p {
+        font-size: 22px;
+    }
 }
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
