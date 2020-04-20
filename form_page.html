@@ -116,8 +116,8 @@
                               </label>
                             </div>
                         </div>
-                        
-                        <a href="otp_page.html" id="SubmitButton">SUBMIT</a>
+
+                        <a id="SubmitButton">SUBMIT</a>
                      </div>
                   </form>
                </div>
@@ -126,33 +126,75 @@
       </div>
    </section>
    <!-- form area main -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
+   <!-- otp farea popup -->
+   <section id="optPopup">
+       <div class="otpPopupHeader">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="logo">
+                     <a href="index.html">
+                        <img class="img-fluid" src="asset/img/logo-2.png" alt="">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </div>
+       <div class="otpFormInfo">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="formInfoTopContent">
+                     <p>A 4-digit OTP has been sent to verify <br> your mobile number</p>
+                     <h4>+91 9876543210 <a id="PhoneEdit" href="#"><img src="asset/img/icons/edit.png" alt=""></a></h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </div>
+       <div class="ptpMainArea">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="optMainareaContent">
+                     <div data-pin></div>
+                     <div class="verifyBtn">
+                        <a href="thanks_page.html">VERIFY</a>
+                     </div>
+                     <div class="resentOtp">
+                        <a href="#">Resend OTP</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </div>
+   </section>
+   <!-- end otp farea popup -->
+   <!-- phone number edit popup -->
+   <section id="phoneEditPopup">
+      <div class="phoneEditPopupContent">
+         <span id="phoneEditClose"><i class="fal fa-times"></i></span>
+         <p>Edit Mobile Number</p>
+         <input id="phoneEdit" name="phone" type="tel" value="98765 43210">
+      </div>
+   </section>
+   <!-- phone number edit popup -->
    <!-- all javascript load here -->
    <script src="asset/js/vendor/jquery-3.3.1.min.js"></script>
    <script src="asset/js/bootstrap.bundle.min.js"></script>
    <script src="asset/js/jquery.nice-select.min.js"></script>
    <script src="asset/js/intlTelInput.js"></script>
-   <script src="asset/js/custom.js"></script>
+   <script src="asset/js/jquery.pin.min.js"></script>
    <script src="asset/js/stepForm.js"></script>
+   <script src="asset/js/custom.js"></script>
    <script>
+   $('[data-pin]').pin({
+      allowSequential: true,
+      allowRepeat: true,
+      count: 4
+   });
       $(document).ready(function() {
          $('#name').focus();
          $('#name').select();
@@ -173,10 +215,16 @@
          separateDialCode:true,
         utilsScript: "asset/js/utils.js",
       });
-      $(document).live('click', function() {
-         // $("#input-element-id").focus();
-        
+      var input = document.querySelector("#phoneEdit");
+      window.intlTelInput(input, {
+         placeholderNumberType:"MOBILE",
+         formatOnDisplay:true,
+         autoHideDialCode:true,
+         autoPlaceholder:"polite",
+         separateDialCode:true,
+        utilsScript: "asset/js/utils.js",
       });
+      $('.iti__selected-dial-code').html('+91');
     </script>
 </body>
 </html>

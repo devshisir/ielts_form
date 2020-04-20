@@ -6,7 +6,7 @@ $(document).ready(function() {
     //     // ;
     //     console.log('click');
     // })
-    
+
     // name next btn
     $('#nameNext').on('click',function(){
         $('.progress2').addClass('active');
@@ -43,6 +43,12 @@ $(document).ready(function() {
     $('#phoneEditClose').on('click',function(){
         $('#phoneEditPopup').removeClass('show');
      })
+
+    // otp popup show
+    $('#SubmitButton').on('click',function(e){
+      $('#optPopup').addClass('show');
+      return false;
+    })
 
 
 
