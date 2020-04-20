@@ -115,3 +115,20 @@
     visibility: visible;
     z-index: 9999999999999999;
 }
+#updateNumberBtn{
+    transition: 0.4s;
+    background: #44D66C;
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    font-family: "Poppins",sans-serif;
+    padding: 12px 60px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: table;
+    margin-top: 10px;
+    position: relative;
+    outline: none;
+    box-shadow: none;
+}

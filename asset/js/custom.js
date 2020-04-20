@@ -50,6 +50,17 @@ $(document).ready(function() {
       return false;
     })
 
+    // get phone value
+    $('#updateNumberBtn').on('click',function(){
+      var getVal = $("#phoneEdit").val();
+      $("#PhoneEditValue").html(getVal);
+      $('#phoneEditPopup').removeClass('show');
+    })
+    $('#SubmitButton').on('click',function(){
+      var MainPhone = $('#phone').val();
+      $("#PhoneEditValue").html(MainPhone);
+      $('#phoneEdit').val(MainPhone);
+    })
 
 
 });
